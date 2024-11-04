@@ -8,7 +8,7 @@
 .bgc_continer {
     width: 100%;
     height: 60vh;
-    background-image: url('/images/Path15.png');
+    background-image: url('../images/Path15.png');
     display: flex;
     justify-content: center;
     align-items: center;

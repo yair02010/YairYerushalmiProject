@@ -94,10 +94,11 @@ ul li a {
 .images {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     padding: 20px;
     background-color: #fff;
     border-bottom: 1px solid #000;
+    justify-items: center;
 }
 
 .images img {
@@ -211,12 +212,13 @@ ul li a {
     height: auto;
     object-fit: cover;
     border-radius: 20px;
-
+    padding-top: 10px;
 }
 
 .button {
     height: auto;
-    width: 25%;
+    width: 45%;
+    height: 60px;
     background-color: #1E3A8A;
     color: white;
     border: none;
@@ -234,8 +236,9 @@ ul li a {
 }
 
 .project p {
-    font-size: 16pt;
+    font-size: 12pt;
     text-align: center;
+    width: 100%;
 }
 
 /* Contact Us */
@@ -311,35 +314,6 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 1200px) {
-    ul li {
-        margin-left: 30px;
-    }
-
-    .Portfolio p,
-    .AboutMe p,
-    .Myprojects p {
-        width: 70%;
-        font-size: 16pt;
-    }
-
-    .images {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .projects-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .project {
-        height: auto;
-    }
-
-    .project h1 {
-        font-size: 28pt;
-    }
-}
-
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -379,7 +353,8 @@ footer {
     }
 
     .images {
-        grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .Portfolio p,
@@ -398,6 +373,11 @@ footer {
     }
 
     .project p {
+        font-size: 12pt;
+    }
+
+    .project a {
+        width: 80%;
         font-size: 12pt;
     }
 }
@@ -436,6 +416,7 @@ footer {
 
     .images {
         grid-template-columns: repeat(2, 1fr);
+        display: grid important!;
         gap: 10px;
     }
 
