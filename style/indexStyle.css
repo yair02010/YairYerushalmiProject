@@ -92,16 +92,12 @@ ul li a {
 
 /* Images */
 .images {
-    width: 100%; */
-    /* display: grid; */
+    width: 100%;
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* padding: 20px; */
+    padding: 20px;
     background-color: #fff;
     border-bottom: 1px solid #000;
-    /* flex: auto; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .images img {
