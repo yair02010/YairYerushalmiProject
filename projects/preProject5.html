@@ -9,13 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/projectFirsPage.css">
-    <script type="text/javascript" src="/projects/script/project.js"></script>
+    <script type="text/javascript" src="project.js"></script>
 </head>
 
 <body>
     <script>
-        var file = "https://raw.githubusercontent.com/yair02010/YairYerushalmiProject/refs/heads/yairHTMLproject/projects/GalleryProject5.html";
-    </script
+        const file = "https://raw.githubusercontent.com/yair02010/YairYerushalmiProject/refs/heads/yairHTMLproject/projects/GalleryProject5.html";
+    </script>
     <nav class="header">
 
 
@@ -29,7 +29,7 @@
     <section class="projectAbout">
         <h1>יעוץ חינם </h1>
         <a href="GalleryProject5.html" class="button">לצפייה בפרויקט</a>
-        <a href="projects/preProject5.html" class="button">להורדת הפרויקט</a>
+        <div onclick=downloadFile(file) class="button">להורדת הפרויקט</a>
     </section>
 
     <div class="images">
