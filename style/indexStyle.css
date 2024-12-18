@@ -97,7 +97,7 @@ ul li a {
     grid-template-columns: repeat(8, 1fr);
     padding: 20px;
     background-color: #fff;
-    border-bottom: 1px solid #000;
+    border-bottom: 0.5px solid #000;
     justify-items: center;
 }
 
@@ -192,6 +192,13 @@ ul li a {
     gap: 20px;
     width: 75%;
     padding: 20px;
+}
+.jsvascriptProject{
+        display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 75%;
+            padding: 20px;
 }
 
 .project {
@@ -314,54 +321,48 @@ footer {
 }
 
 /* Responsive Design */
+/* Responsive Design Enhancements */
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
-        padding: 20px;
-    }
-
-    ul {
-        flex-direction: column;
-        margin: 0;
-        display: none;
-        position: absolute;
-        right: 0;
-        background-color: skyblue;
-        border: 1px solid #000;
-        width: 200px;
         padding: 10px;
     }
 
-    ul li {
-        border-bottom: 3px solid #000;
-        margin: 0;
+    ul {
+        display: none;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: skyblue;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
     }
 
     #hamburger {
         display: block;
     }
 
-    #hamburger:hover+ul {
+    #hamburger:hover+ul,
+    ul:hover {
         display: flex;
-        flex-direction: column;
     }
 
-    .header img {
-        position: absolute;
-        top: 0.5rem;
-        left: 5rem;
+    ul li {
+        margin: 10px 0;
+        text-align: center;
     }
 
     .images {
-        display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
 
     .Portfolio p,
     .AboutMe p,
     .Myprojects p {
         width: 90%;
-        font-size: 14pt;
+        font-size: 14px;
     }
 
     .projects-container {
@@ -369,86 +370,71 @@ footer {
     }
 
     .project h1 {
-        font-size: 24pt;
+        font-size: 20px;
     }
 
     .project p {
-        font-size: 12pt;
+        font-size: 12px;
     }
 
-    .project a {
-        width: 80%;
-        font-size: 12pt;
+    .project img {
+        max-height: 150px;
     }
-}
 
-@media (max-width: 480px) {
-    .Portfolio
+    .button {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 480px) {
     .Portfolio {
-        height: auto;
         padding: 20px;
     }
 
-
-    .Portfolio h1 {
-        font-size: 30pt;
-    }
-
-    .Portfolio p {
-        width: 90%;
-        font-size: 14pt;
-    }
-
+    .Portfolio h1,
     .AboutMe h1,
-    .Myprojects h1,
-    .conectUs h2 {
-        font-size: 28pt;
+    .Myprojects h1 {
+        font-size: 24px;
     }
 
+    .Portfolio p,
     .AboutMe p,
     .Myprojects p {
-        width: 90%;
-        font-size: 14pt;
-    }
-
-    .images {
-        grid-template-columns: repeat(2, 1fr);
-        display: grid important!;
-        gap: 10px;
-    }
-
-    .project h1 {
-        font-size: 20pt;
-    }
-
-    .project p {
-        font-size: 10pt;
-    }
-
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-
-    .header {
-        padding: 10px;
-    }
-
-    ul {
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    ul li {
-        margin-left: 0;
+        font-size: 12px;
     }
 
     .header img {
-        position: relative;
-        top: 0;
-        left: 0;
-        margin: 0;
+        width: 40px;
+    }
+
+    .images {
+        grid-template-columns: 1fr;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+
+    .conectUs {
+        padding: 15px;
+    }
+
+    .conectUs h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+    }
+
+    .conectUs button {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 12px;
     }
 }
